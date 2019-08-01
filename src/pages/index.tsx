@@ -1,3 +1,7 @@
-import React from "react"
+import React from 'react';
 
-export default () => <div style={{}}>Hello world Yeah gatsby!</div>
+const Home = (): React.ReactElement => {
+  return <div style={{}}>Hello world Yeah gatsby!</div>;
+};
+
+export default Home;
