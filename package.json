@@ -14,10 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "eslint": "^6.1.0",
     "gatsby": "^2.13.45",
     "gatsby-plugin-typescript": "^2.1.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.3"
   },
   "devDependencies": {
     "@types/jest": "^24.0.16",
@@ -25,7 +27,17 @@
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-react": "^1.1.7",
     "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "prettier": "^1.18.2"
   },
   "repository": {

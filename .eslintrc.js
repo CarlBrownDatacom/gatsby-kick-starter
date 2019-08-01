@@ -4,7 +4,6 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   extends: [
-    'react-app',
     'airbnb', // Uses the recommended rules from the eslint-config-airbnb
     'plugin:react/recommended', // Uses the recommended rules from the eslint-plugin-react
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
