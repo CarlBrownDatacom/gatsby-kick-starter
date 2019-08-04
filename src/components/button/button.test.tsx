@@ -9,7 +9,7 @@ it('Button click fires handleClick method ', (): any => {
   const { getByText } = render(
     <Button handleClick={buttonEvent} isPrimary>
       test
-    </Button>,
+    </Button>
   );
 
   fireEvent.click(getByText('test'));

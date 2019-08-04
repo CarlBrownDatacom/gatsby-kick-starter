@@ -12,7 +12,6 @@ import { ThemeProvider } from 'styled-components';
 import THEME from './src/assets/styles/config';
 import GlobalStyle from './src/assets/styles/globalStyle';
 
-// eslint-disable-next-line
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={THEME}>
     <Fragment>

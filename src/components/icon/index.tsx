@@ -9,7 +9,7 @@ const TestStyle = styled.svg`
   height: 1rem;
   width: 1rem;
   display: inline-block;
-`
+`;
 
 const Icon: React.FC<IconProps> = ({ name }: IconProps): React.ReactElement => {
   const DynamicIcon = lazy((): Promise<any> => import(`../../assets/icons/${name}.tsx`));
