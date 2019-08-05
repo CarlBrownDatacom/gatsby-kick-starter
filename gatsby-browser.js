@@ -12,13 +12,14 @@ import { ThemeProvider } from 'styled-components';
 import THEME from './src/assets/styles/config';
 import GlobalStyle from './src/assets/styles/globalStyle';
 
-export const wrapRootElement = ({ element }) => (
-  <ThemeProvider theme={THEME}>
-    <Fragment>
-      <GlobalStyle />
-      {element}
-    </Fragment>
-  </ThemeProvider>
-);
-
+export const wrapRootElement = ({ element }) => {
+  return (
+    <ThemeProvider theme={THEME}>
+      <Fragment>
+        <GlobalStyle />
+        {element}
+      </Fragment>
+    </ThemeProvider>
+  );
+}
 // INFO: You cannot export default here... interesting
