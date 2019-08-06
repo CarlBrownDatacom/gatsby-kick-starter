@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { ThemeConsumer, ThemeContext } from 'styled-components';
+import React, { useState } from 'react';
 import Button from '../components/button';
 
 const Home = (): React.ReactElement => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
-  const fetchData = async (): void => {
-    const response = await fetch('/.netlify/functions/testLambda', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'X-Pronto-Username': userName,
-        'X-Pronto-Password': password,
-      },
-    });
-    console.info('asdfsdfs dsdddddddddddddddddddd ', response);
+  const fetchData = async (): Promise<any> => {
+    const response = await fetch('/.netlify/functions/testLambda');
+    console.info('*****', response);
     const jsonResponse = await response.json();
-    console.log('************', jsonResponse);
+    console.info(jsonResponse);
   };
 
   return (
